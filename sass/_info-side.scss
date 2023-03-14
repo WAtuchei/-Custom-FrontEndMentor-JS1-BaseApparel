@@ -4,7 +4,7 @@
     flex: 1.5 0 auto;
     padding: 3.5rem 8.5rem !important;
 
-    img {
+    .logo {
         max-width: 140px;
     }
     h1 {
@@ -26,7 +26,7 @@
         font-size: 15px;
         color: var(--DesaturatedRed);
     }
-    // Form
+// Form
     input {
         all: unset;
         box-sizing: border-box;
@@ -34,6 +34,12 @@
         width: 85%;
         border: 1px solid rgba(128, 128, 128, 0.555);
         border-radius: 30px;
+    }
+    input:focus {
+        border-color: var(--DesaturatedRed);
+    }
+    .input-invalid {
+        border-color: var(--SoftRed) !important;
     }
     #submitArrow {
         width: 20%;
@@ -57,7 +63,6 @@
         display: none;
         color: rgba(255, 0, 0, 0.753);
     }
-
     ::placeholder { 
         color: rgba(128, 128, 128, 0.781);
     }

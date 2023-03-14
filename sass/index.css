@@ -26,6 +26,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--Fsize);
   font-weight: 400;
+  background-image: var(--GradientWhite);
 }
 
 main {
@@ -52,7 +53,7 @@ main {
   flex: 1.5 0 auto;
   padding: 3.5rem 8.5rem !important;
 }
-.info-side img {
+.info-side .logo {
   max-width: 140px;
 }
 .info-side h1 {
@@ -80,6 +81,12 @@ main {
   width: 85%;
   border: 1px solid rgba(128, 128, 128, 0.555);
   border-radius: 30px;
+}
+.info-side input:focus {
+  border-color: var(--DesaturatedRed);
+}
+.info-side .input-invalid {
+  border-color: var(--SoftRed);
 }
 .info-side #submitArrow {
   width: 20%;
@@ -163,7 +170,7 @@ main {
   .hero-mobile {
     align-self: center;
     display: grid !important;
-    width: 100%;
+    width: 375px !important;
     margin-top: 2rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -2,52 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="sass/index.css">
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="sass/index.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
 
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
+   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
-    <main class="row mx-0 mx-sm-2 gx-0">
-        <!-- Left side -->
-        <section class="info-side col-12 col-lg-7">
-            <img src="images/logo.svg" alt="logo">
+   <main class="row mx-1 mx-sm-2 gx-0">
+      <!-- Left side -->
+      <section class="info-side col-12 col-lg-7">
+         <img class="logo" src="images/logo.svg" alt="logo">
 
-            <!-- Mobile Hero -->
-            <img class="hero-mobile" src="images/hero-mobile.jpg" alt="Woman" style="display: none;">
+         <!-- Mobile Hero -->
+         <img class="hero-mobile" src="images/hero-mobile.jpg" alt="Woman" style="display: none;">
 
-            <h1><span>We're</span> coming soon</h1>
-            <p>Hello fellow shoppers! We're currently building our new fashion store.
-                Add your email below to stay up-to-date with announcements and our launch deals.
-            </p>
+         <h1><span>We're</span> coming soon</h1>
+         <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+         </p>
 
-            <!-- Form container -->
-            <form class="container w-100 mt-4 g-0 position-relative">
-                <input id="userEmail" type="text" name="userEmail" placeholder="Email Address">
+         <!-- Form container -->
+         <form class="container w-100 mt-4 g-0 position-relative" >
+            <!-- action="subscribed.html" method="get" -->
+            <input id="userEmail" type="email" name="userEmail" placeholder="Email Address"
+               pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+               <!-- onclick="invalidForm()" -->
+            <button id="submitArrow" class="btn rounded-pill" onclick="submitEmail()" type="submit" value="submit"> 
+               <img src="images/icon-arrow.svg" alt="icon-arrow">
+            </button>
 
-                <button id="submitArrow" class="btn rounded-pill" type="submit" value="submit">
-                    <img src="images/icon-arrow.svg" alt="icon-arrow">
-                </button>
+            <img id="errorIcon" src="images/icon-error.svg" alt="icon-error">
+         </form>
 
-                <img id="errorIcon" src="images/icon-error.svg" alt="icon-error">
-            </form>
+         <p id="errorMessage" class="m-0 mt-1 px-4">Please provide a valid email</p>
+      </section>
 
-            <p id="errorMessage" class="m-0 mt-1 px-4">Please provide a valid email</p>
-        </section>
+      <!-- Right side -->
+      <section class="hero-side col-12 col-lg-5">
+         <img class="hero-BG w-100 d-flex justify-content-end" src="images/hero-desktop.jpg" alt="Woman">
+      </section>
+   </main>
 
-        <!-- Right side -->
-        <section class="hero-side col-12 col-lg-5">
-            <img class="hero-BG w-100 d-flex justify-content-end" src="images/hero-desktop.jpg" alt="Woman">
-        </section>
-    </main>
-
-    <script src="index.js"></script>
+   <script src="index.js"></script>
 </body>
 </html>
