@@ -33,9 +33,21 @@ body {
 }
 
 main {
+    min-width: 375px;
     max-width: 1160px;
     display: flex;
     justify-content: center;
     background-image: url('../images/bg-pattern-desktop.svg');
     box-shadow: 0 0 16px #00000060;
 }
+
+/*Media Query*/
+
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+    main {
+        height: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}    
