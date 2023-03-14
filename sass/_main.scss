@@ -31,3 +31,11 @@ body {
     font-size: var(--Fsize);
     font-weight: 400;
 }
+
+main {
+    max-width: 1160px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    box-shadow: 0 0 16px #00000060;
+}
