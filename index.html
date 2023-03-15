@@ -32,19 +32,18 @@
          </p>
 
          <!-- Form container -->
-         <form class="container w-100 mt-4 g-0 position-relative" >
+         <form id="emailForm" class="container w-100 mt-4 g-0 position-relative" >
             <!-- action="subscribed.html" method="get" -->
-            <input id="userEmail" type="email" name="userEmail" placeholder="Email Address"
-               pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            <input id="userEmail" type="email" name="userEmail" placeholder="Email Address">
                <!-- onclick="invalidForm()" -->
-            <button id="submitArrow" class="btn rounded-pill" onclick="submitEmail()" type="submit" value="submit"> 
+            <button class="submitArrow btn rounded-pill" onclick="submitEmail()" type="submit" value="submit"> 
                <img src="images/icon-arrow.svg" alt="icon-arrow">
             </button>
 
-            <img id="errorIcon" src="images/icon-error.svg" alt="icon-error">
+            <img class="errorIcon" src="images/icon-error.svg" alt="icon-error">
          </form>
 
-         <p id="errorMessage" class="m-0 mt-1 px-4">Please provide a valid email</p>
+         <p class="errorMessage m-0 mt-1 px-4"></p>
       </section>
 
       <!-- Right side -->

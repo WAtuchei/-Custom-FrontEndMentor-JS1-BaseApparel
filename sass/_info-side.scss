@@ -41,7 +41,7 @@
     .input-invalid {
         border-color: var(--SoftRed) !important;
     }
-    #submitArrow {
+    .submitArrow {
         width: 20%;
         padding: .7rem 2rem;
         position: absolute;
@@ -49,17 +49,17 @@
         right: 5%;
         background-image: var(--GradientRed);
     }
-        #submitArrow:active {
+        .submitArrow:active {
             filter: brightness(120%) drop-shadow(0 5px 5px #0000005b);
             border-color: #ffffff00;
         }
-    #errorIcon {
+    .errorIcon {
         display: none;
         position: absolute;
         top: 27%;
         right: 28%;
     }
-    #errorMessage {
+    .errorMessage {
         display: none;
         color: rgba(255, 0, 0, 0.753);
     }

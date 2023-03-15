@@ -86,9 +86,9 @@ main {
   border-color: var(--DesaturatedRed);
 }
 .info-side .input-invalid {
-  border-color: var(--SoftRed);
+  border-color: var(--SoftRed) !important;
 }
-.info-side #submitArrow {
+.info-side .submitArrow {
   width: 20%;
   padding: 0.7rem 2rem;
   position: absolute;
@@ -96,17 +96,17 @@ main {
   right: 5%;
   background-image: var(--GradientRed);
 }
-.info-side #submitArrow:active {
+.info-side .submitArrow:active {
   filter: brightness(120%) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3568627451));
   border-color: rgba(255, 255, 255, 0);
 }
-.info-side #errorIcon {
+.info-side .errorIcon {
   display: none;
   position: absolute;
   top: 27%;
   right: 28%;
 }
-.info-side #errorMessage {
+.info-side .errorMessage {
   display: none;
   color: rgba(255, 0, 0, 0.753);
 }
