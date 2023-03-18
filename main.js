@@ -1,9 +1,9 @@
 "use strict";
-const emailForm = document.getElementById("emailForm");
-const userEmail = document.getElementById("userEmail");
-const errorIcon = document.querySelector(".errorIcon");
-const errorMessage = document.querySelector(".errorMessage");
-const errorSet = [errorIcon, errorMessage];
+const emailForm = document.getElementById("emailForm"),
+    userEmail = document.getElementById("userEmail"),
+    errorIcon = document.querySelector(".errorIcon"),
+    errorMessage = document.querySelector(".errorMessage"),
+    errorSet = [errorIcon, errorMessage];
 
 // Email Check
 const emailChecked = (input) => {
@@ -51,8 +51,8 @@ const invalidForm = () => {
 // Submit
 emailForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = emailChecked(userEmail);
-    const maillength = lengthChecked(userEmail, 6)
+    const email = emailChecked(userEmail),
+        maillength = lengthChecked(userEmail, 6);
 
     switch (email && maillength) {
         case true:

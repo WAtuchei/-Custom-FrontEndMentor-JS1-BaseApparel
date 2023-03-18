@@ -1,6 +1,6 @@
 "use strict";
-const subMessage = document.getElementById('subMessage');
-const sessionEmail = localStorage.getItem('subEmail');
+const subMessage = document.getElementById('subMessage'),
+     sessionEmail = localStorage.getItem('subEmail');
 
 window.addEventListener('load', () => {
     if (sessionEmail === null) {
